@@ -1,0 +1,76 @@
+// USER
+
+POST http://localhost:5000/api/users/register
+Content-Type: application/json
+
+{
+    "name": "test1",
+    "email": "test1@test.com",
+    "password": "test1_123"
+}
+###
+
+POST http://localhost:5000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "test2@test.com",
+    "password": "test2_123"
+}
+###
+
+POST http://localhost:5000/api/users/logout
+###
+
+GET http://localhost:5000/api/users
+###
+
+GET http://localhost:5000/api/users/all
+###
+
+//ITEMS
+
+POST http://localhost:5000/api/items
+Content-Type: application/json
+
+{
+    "title": "SilverBullet Mixer Grinder",
+    "brand": "COOKWELL",
+    "price": 1899,
+    "rating": "4.1",
+    "imageUrl": "https://assets.ccbp.in/frontend/react-js/ecommerce/appliances-mixer-grinder-white.png",
+}
+###
+
+GET http://localhost:5000/api/items
+###
+
+
+//ORDERS
+
+POST http://localhost:5000/api/orders
+###
+
+GET http://localhost:5000/api/orders
+###
+
+GET http://localhost:5000/api/orders/all
+###
+
+//CART
+
+POST http://localhost:5000/api/cart
+Content-Type: application/json
+
+{
+    "itemId": "6988dbd6c38a87ce309bdf48",
+    "name": "Embroidered Net Gown"
+}
+###
+
+GET http://localhost:5000/api/cart
+###
+
+DELETE http://localhost:5000/api/cart
+###
+
